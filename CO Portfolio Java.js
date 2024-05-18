@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling for anchor links
+    // smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -10,16 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Show section titles on scroll
+    // show section titles on scroll
     const sections = document.querySelectorAll('.section');
 
     function handleScroll() {
         const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight; // Height of the viewport
+        const windowHeight = window.innerHeight; // height of the viewport
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - windowHeight * 0.2; // Adjust margin to 20% of the viewport height
-            const sectionBottom = sectionTop + section.clientHeight + windowHeight * 0.4; // Adjust margin to 40% of the viewport height
+            const sectionTop = section.offsetTop - windowHeight * 0.2; // adjust margin to 20% of the viewport height
+            const sectionBottom = sectionTop + section.clientHeight + windowHeight * 0.4; // adjust margin to 40% of the viewport height
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 section.classList.add('visible');
@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Initial check when the page loads
+    // initial check when the page loads
     handleScroll();
 
-    // Check on scroll
+    // check on scroll
     window.addEventListener('scroll', handleScroll);
 });
 
-// Expand Tables
+// expand tables
 var currentlyOpenTable = null;
 
 function expandTable(tableId) {
