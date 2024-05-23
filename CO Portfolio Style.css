@@ -1,5 +1,5 @@
 /* responsive for the phones */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .content {
         font-size: 16px;
         height: auto;
@@ -14,6 +14,7 @@
         padding-bottom: clamp(100px, 1vw, 150px) !important;
         padding-top: 23vh;
         text-align: left;
+        color: #DEEEFC;
     }
 
     .intro-grid-container {
